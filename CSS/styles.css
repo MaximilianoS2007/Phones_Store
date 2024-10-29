@@ -183,3 +183,203 @@ summary:hover {
     font-size: 48px;
     margin-bottom: 10px;
 }
+
+.item span {
+    font-size: 12px;
+    color: black;
+}
+h3 {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    padding: 10px;
+    cursor: pointer;
+    justify-content: center;   
+}
+.creator-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    height: auto;
+    margin: 0;
+}
+.creator-info {
+    max-width: auto;
+}
+.creator-info img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 30%;
+}
+
+.creator-info img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.producto img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+#derechos {
+    color: black;
+    font-size: 14px;
+    text-decoration: underline solid red;
+    transition-duration: 1s;
+}
+
+#derechos:hover{
+    text-decoration: underline solid black;
+}
+
+#derecho{
+    color: black;
+}
+
+.footer-container .custom-icon {
+    color: black;
+    font-size: 25px;
+}
+
+nav::after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(255, 7, 58, 0.8);
+}
+
+details[open] >summary{
+    transition: 1s ease;
+}
+
+.box_muestra{
+    max-width: 500px;
+    max-height: auto;
+}
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    nav::after {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: rgba(255, 7, 58, 0.8);
+    }
+    .menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        padding: 10px 0;
+        padding-top: 15px;
+        padding-bottom: 0;
+        background-color: black;
+    }
+
+    .menu-burger {
+        display: flex;
+        padding: 10px 20px; 
+        justify-content: flex-start;
+        align-items: center; 
+        z-index: 1003; 
+    }
+
+    .opc {
+        border-bottom: 1px solid rgb(255, 255, 255); 
+        width: 100%; 
+        text-align: center; 
+        padding-bottom: 13px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .logo_nav {
+        padding-left: 95px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1,h2 {
+        font-size: 20px;
+    }
+
+    #enlace_clientes {
+        font-size: 14px;
+        text-decoration: underline red;
+    }
+    
+    p {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        padding: 10px;
+        cursor: pointer; 
+        justify-content: center;
+        align-items: center;
+        max-width: 600px; 
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    summary {
+        font-size: 14px;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        display: flex;
+        text-align: center;
+        text-decoration: underline transparent;
+        transition: 0.5s;
+        border-radius: 8px;
+    }
+
+    summary:hover {
+        text-decoration-color: rgba(255, 7, 58, 0.8);
+    }
+
+    .custom-icon {
+        color: black;
+        font-size: 36px; 
+        margin-bottom: 10px; 
+    }
+
+    .desplegable{
+        max-width: 450px;
+        border-radius: 10px;
+    }
+
+    #derechos {
+        color: black;
+        font-size: 14px;
+        text-decoration: underline solid red;
+        transition-duration: 1s;
+    }
+    
+    #derechos:hover{
+        text-decoration: underline solid black;
+    }
+
+    #derecho{
+        color: black;
+    }
+}
