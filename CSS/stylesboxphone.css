@@ -1,0 +1,110 @@
+.media-container {
+    display: flex;
+    gap: 30px; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.media-box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px  solid black;
+    text-decoration: none;
+    color: inherit;
+
+    
+}
+
+.box-iphones{
+    width: 300px;
+    flex-wrap: wrap;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px  solid black;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.box-iphones img.main-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* Imagen principal */
+.media-box img.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+
+/* Nombre en la parte inferior */
+.media-box .title-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Contenedor del video o imágenes adicionales */
+.media-box .media-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.5s ease;
+}
+
+/* Video o galería */
+.media-box video, .media-box .image-slideshow {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Efecto al pasar el mouse */
+.media-box:hover img.main-image {
+    opacity: 0;
+}
+
+.media-box:hover .media-overlay {
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .media-box {
+        position: relative;
+        width: 300px;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 30px;
+        cursor: pointer;
+        border: 1px  solid black;
+    }
+}
+.media-container img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.media-container video:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
