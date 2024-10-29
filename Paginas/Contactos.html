@@ -26,21 +26,20 @@
             </div>
         </nav>
     </header>
-    <main>
-        <form id="Contactos">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" requierd>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" requierd>
-            <label for="apellido">Apellido</label>
-            <input type="textarea" name="mensaje" id="mensaje" requierd>
-        </form>
-
-
-
-
-        
-    </main>
+        <main>
+            <form id="Contactos" action="insertar_producto.php" >
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" requierd>
+                <label for="email">Ingrese gmail</label>
+                <input type="email" name="email" id="email" requierd>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" requierd>
+                <label for="mensaje">Mensaje que quieres enviar</label>
+                <textarea id="mensaje" name="mensaje" cols="40" rows="5"></textarea>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </form>
+        </main>
     <footer>
         <div class="footer-container">
             <div class="footer-section contact-info">
