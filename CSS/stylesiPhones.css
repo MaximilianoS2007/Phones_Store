@@ -1,0 +1,39 @@
+/* Estilos para las paginas iPhones */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.row {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.caja {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.caracteristicas {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.contenteditable {
+    border: 1px dashed #aaa;
+    padding: 5px;
+    margin-top: 10px;
+}
