@@ -22,11 +22,6 @@ body {
     animation: fadeIn 2s ease-in-out;
 }
 
-.servicios .fade-in {
-    animation: fadeIn 4s ease-in-out;
-}
-
-
 .white {
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
@@ -224,6 +219,7 @@ h3 {
     height: auto;
     margin: 0;
 }
+
 .creator-info {
     max-width: auto;
 }
