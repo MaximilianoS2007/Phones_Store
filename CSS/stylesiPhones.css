@@ -1,39 +1,70 @@
-/* Estilos para las paginas iPhones */
+/* Estilos para las páginas de iPhones */
 main {
-    padding: 20px;
     text-align: center;
 }
 
 .row {
-    display: flex; 
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las cajas */
     margin-top: 20px;
 }
 
 .caja {
     border: 1px solid #ccc;
     padding: 20px;
-    width: 300px;
+    width: 40%;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    margin: 10px;
     border-radius: 15px;
     background-color: #fff;
+    transition: transform 0.3s ease; 
 }
+
 
 .imagen {
     width: 100%;
     height: auto;
-    margin-bottom: 10px; 
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
+h2{
+    color: #ffffff;
+}
+
+h3{
+    color: black;
+}
 .caracteristicas {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 14px;
+    text-align: left;
 }
 
-.contenteditable {
+.caja p {
+    color: #000000;
+}
+
+.iPhone {
     border: 1px dashed #aaa;
     padding: 5px;
     margin-top: 10px;
+    font-size: 14px;
+    color: #667;
+}
+
+@media (max-width: 768px) {
+    
+    .caja {
+        border: 1px solid #ccc;
+        padding: 20px;
+        width: 85%;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        border-radius: 15px;
+        background-color: #fff;
+        transition: transform 0.3s ease; 
+    }
 }

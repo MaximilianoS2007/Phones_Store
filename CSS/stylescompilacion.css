@@ -1,0 +1,85 @@
+.container {
+    position: relative;
+    width:30%;
+    height: 30%;
+    margin: auto;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+main{
+    padding-bottom: 20px;
+}
+.image {
+    border-radius: 30px;
+    border: 1px black solid;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.section{
+    position: absolute;
+    height: 83%;
+    top: 70px;
+}
+.section1{
+    width: 22%;
+    left: 5%;
+}
+.section2{
+    width: 20%;
+    left: 27%;
+}
+.section3{
+    width: 20%;
+    left: 47%;
+}
+.section4{
+    width: 30%;
+    left: 66%;
+}
+
+.popup {
+    position: relative;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-48.5%);
+    width: 100%;
+    height: 80vh;
+    color: black;
+    text-align: center;
+    display: none;
+    border-radius: 8px;
+    z-index: -0;
+    border: 1px white solid;
+}
+
+.iframe-content {
+    width: 100%;
+    height: 100%;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width:60%;
+    }
+    .popup {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translateX(-48.5%);
+        width: 100%;
+        height: 90%;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        text-align: center;
+        display: none;
+        border-radius: 8px;
+        z-index: 10;
+    }
+    
+}
