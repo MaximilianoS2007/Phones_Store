@@ -1,6 +1,5 @@
 /* Estilos para las páginas de iPhones */
 main {
-    padding: 20px;
     text-align: center;
 }
 
@@ -15,7 +14,7 @@ main {
 .caja {
     border: 1px solid #ccc;
     padding: 20px;
-    width: 300px;
+    width: 40%;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
     margin: 10px;
     border-radius: 15px;
@@ -23,9 +22,6 @@ main {
     transition: transform 0.3s ease; 
 }
 
-.caja:hover {
-    transform: scale(1.05);
-}
 
 .imagen {
     width: 100%;
@@ -34,10 +30,13 @@ main {
     border-radius: 10px;
 }
 
-h2, h3 {
-    color: #333;
+h2{
+    color: #ffffff;
 }
 
+h3{
+    color: black;
+}
 .caracteristicas {
     margin-top: 15px;
     font-size: 14px;
@@ -54,4 +53,18 @@ h2, h3 {
     margin-top: 10px;
     font-size: 14px;
     color: #667;
+}
+
+@media (max-width: 768px) {
+    
+    .caja {
+        border: 1px solid #ccc;
+        padding: 20px;
+        width: 85%;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        border-radius: 15px;
+        background-color: #fff;
+        transition: transform 0.3s ease; 
+    }
 }
